@@ -27,3 +27,80 @@ h1, h2, h3, h4, h5, h6 {
   margin-inline: auto;
   background: white;
 }
+
+/* Na banner se musí nastavit obrázek jako pozadí 
+
+- Část shop je na procvičení vnořeného flexboxu --> to dám do sloupce a použiju gap
+- Když máme obrázek, tak doporučuje Hanka nastavit šířku na 100% --> většinou budou ty obrázky nějakým způsobem velké + nastavit display: blok*/
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  font-family: var(--font-special);
+}
+
+.logo{
+  padding-left: 20px;
+  font-weight: 900;
+}
+
+.cart{
+  padding-right: 20px;
+}
+
+.menu__item{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.banner{
+  background: url(images/banner.jpg) no-repeat center/cover;
+  height: auto 100%;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.banner__title{
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  font-family: var(--font-special);
+  padding: 6rem 6rem 0 4rem;
+  margin: 0;
+}
+
+.banner__description{
+  color: white;
+  text-align: left;
+  font-size: 1.4rem;
+  padding: 0 6rem 6rem 4rem;
+  font-weight: lighter;
+}
+
+.shop{
+  display: flex;
+  margin: 40px;
+  align-items: center;
+  width: 25%;
+}
+
+.shop__item{
+  width: 100%;
+}
+
+.visual{
+  display: flex;
+  width: 100%;
+}
+
+.visual__content{
+  background-color: beige;
+  width: 50%;
+  text-align: center;
+}
+
+.visual__photo{
+  width: 50% auto;
+}
